@@ -24,13 +24,13 @@ print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 print("You are at a cross road. Where do you want to go?")
 
-turn = input("Type \"left\" or \"right\".\n")
-if turn == "left":
+diredtion = input("Type \"left\" or \"right\".\n").lower()
+if direction == "left":
     print("You have reached the shore. Do you want to wait for a boat or swim?")
-    wait = input("Type \"wait\" to wait for the boat. Type \"swim\" to swim across.\n")
+    wait = input("Type \"wait\" to wait for the boat. Type \"swim\" to swim across.\n").lower()
     if wait == "wait":
         print("You have crossed the shore easily, but there are 3 doors to exit, which one would you pick?")
-        exit = input("Pick one door to exit, \"red\", \"blue\", \"yellow\".\n")
+        exit = input("Pick one door to exit, \"red\", \"blue\", \"yellow\".\n").lower()
         if exit == "red":
             print("Game over. You entered the devils house")
         elif exit == "blue":
