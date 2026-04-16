@@ -41,7 +41,7 @@ if direction == "left":
             print("Please check the selection you have made.")
     else:
         print("Game Over")
-elif turn == "right":
+elif direction == "right":
     print("Game Over")
 else:
     print("Please check the selection you have made & retry. ")
